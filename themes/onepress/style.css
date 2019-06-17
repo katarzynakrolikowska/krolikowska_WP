@@ -527,7 +527,11 @@ input[type="radio"], input[type="checkbox"] {
   float: left;
   margin-right: 3.5em;
 }
-
+@media (max-width: 576px) {
+  .alignleft {
+    margin-right: 0.75em;
+  }
+}
 .alignright {
   display: inline;
   float: right;
@@ -850,6 +854,12 @@ Footer widgets
   display: initial;
   vertical-align: middle;
   font-weight: 600;
+}
+@media (max-width: 576px) {
+  .site-text-logo,
+  .site-title {
+    font-size: 18px !important;
+  }
 }
 .site-branding .site-title:hover,
 .site-branding .site-text-logo:hover {
